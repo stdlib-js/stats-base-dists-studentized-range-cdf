@@ -1,44 +1,15 @@
+"use strict";var o=function(i,e){return function(){return e||i((e={exports:{}}).exports,e),e.exports}};var d=o(function(B0,J){J.exports=[.0176140071391521,.0406014298003869,.0626720483341091,.0832767415767048,.10193011981724,.118194531961518,.131688638449177,.142096109318382,.149172986472604,.152753387130726,.152753387130726,.149172986472604,.142096109318382,.131688638449177,.118194531961518,.10193011981724,.0832767415767048,.0626720483341091,.0406014298003869,.0176140071391521]});var N=o(function(D0,K){K.exports=[.993128599185095,.963971927277914,.912234428251326,.839116971822219,.746331906460151,.636053680726515,.510867001950827,.37370608871542,.227785851141645,.0765265211334973,-.0765265211334973,-.227785851141645,-.37370608871542,-.510867001950827,-.636053680726515,-.746331906460151,-.839116971822219,-.912234428251326,-.963971927277914,-.993128599185095]});var T=o(function(J0,y){
+var M=require('@stdlib/math-base-special-abs/dist'),X=require('@stdlib/math-base-special-exp/dist'),Y=require('@stdlib/constants-float64-sqrt-two-pi/dist'),Z=7.071,$=220.2068679123761,w=221.2135961699311,z=112.0792914978709,r0=33.912866078383,e0=6.37396220353165,a0=.7003830644436881,i0=.03526249659989109,u0=440.4137358247522,t0=793.8265125199484,v0=637.3336333788311,f0=296.5642487796737,s0=86.78073220294608,n0=16.06417757920695,q0=1.755667163182642,o0=.08838834764831845;function l0(i){var e,r,t,v,a;return r=M(i),r>37?i>0?v=1:v=0:(e=X(-.5*r*r),t=e/Y,r<Z?v=e*((((((i0*r+a0)*r+e0)*r+r0)*r+z)*r+w)*r+$)/(((((((o0*r+q0)*r+n0)*r+s0)*r+f0)*r+v0)*r+t0)*r+u0):v=t/(r+1/(r+2/(r+3/(r+4/(r+.65))))),i>=0&&(a=v,v=1-a)),v}y.exports=l0
+});var p=o(function(K0,W){
+var b=require('@stdlib/math-base-special-round/dist'),p0=require('@stdlib/math-base-special-sqrt/dist'),E=require('@stdlib/math-base-special-exp/dist'),V=require('@stdlib/math-base-special-pow/dist'),c0=require('@stdlib/math-base-special-ln/dist'),d0=require('@stdlib/constants-float64-pi/dist'),I=T(),R=d(),g=N();function F(i,e,r,t,v){var a=(t-r)*e+t+r,f=E(-a*a*.125);return f*=V(I(a*.5)-I((a-2*i)*.5),v-1),f}function N0(i,e,r,t,v,a,f){var u=0,s=(a-v)*.5,n=(a+v)*.5,q;for(q=0;q<f;q++)g[q]===0?u+=R[q]*F(i,n,e,r,t):u+=R[q]*F(i,g[q]*s+n,e,r,t);return s*u}function I0(i,e){var r,t,v,a,f,u;if(i<=0)return 0;for(i<=3?u=3:u=2,t=i/2,v=1,a=((u-v)*(i/2)+8*v)/u,r=0,f=1;f<b(u)+1;f++)v=f,r+=(a-t)/2*N0(i,t,a,e,-1,1,20),t=a,f+1===b(u)?a=8:a=((u-v-1)*(i/2)+8*(v+1))/u;return r*=2*e/p0(2*d0),r+=V(E(1),e*c0(2*I(i/2)-1)),r}W.exports=I0
+});var S=o(function(M0,C){
+var x0=require('@stdlib/math-base-special-gammaln/dist'),m0=require('@stdlib/math-base-special-sqrt/dist'),O0=require('@stdlib/math-base-special-abs/dist'),P0=require('@stdlib/math-base-special-exp/dist'),c=require('@stdlib/math-base-special-ln/dist'),y0=require('@stdlib/constants-float64-ln-two/dist'),T0=p();function b0(i,e,r,t,v,a,f){var u,s,n;return s=e*f+2*r*f+f,u=T0(m0(s/2)*i,v),u===0&&(u=1e-37),n=t*c(u)+c(f)+a/2*c(a)+-s*a/4+(a/2-1)*c(s)-(a*y0+x0(a/2)),O0(n)>=1e30?0:P0(n)}C.exports=b0
+});var x=o(function(X0,G){
+var _=d(),h=N(),j=S();function R0(i,e,r,t,v,a,f,u,s){var n=0,q=(a-v)/2,P=(a+v)/2,l;for(l=0;l<f;l++)h[l]===0?n+=_[l]*j(i,P,e,t,r,u,s):n+=_[l]*j(i,h[l]*q+P,e,t,r,u,s);return q*n}G.exports=R0
+});var Q=o(function(Y0,L){
+var g0=require('@stdlib/assert-is-positive-integer/dist').isPrimitive,m=require('@stdlib/math-base-assert-is-nan/dist'),F0=require('@stdlib/math-base-special-abs/dist'),E0=require('@stdlib/math-base-special-pow/dist'),V0=require('@stdlib/constants-float64-pinf/dist'),H=x(),W0=p(),C0=1e-10;function S0(i,e,r,t){var v,a,f,u,s;if(m(i)||m(e)||m(r))return NaN;if(e<2||r<2)return NaN;if(t===void 0)t=1;else if(!g0(t))return NaN;if(r===1?e<10?u=1+1/(2*e+3):e<=100?u=1.0844+(1.119-1.0844)/90*(e-10):u=1.119+1/e:r===2?u=.968:r<=100?u=1:r<=800?u=1/2:r<=5e3?u=1/4:u=1/8,i<0)return 0;if(i===V0)return 1;if(r>25e3||H(i,0,e,t,-1,1,20,r,u)===0)return E0(W0(i,e),t);for(a=0,f=!1,s=0,v=0;!f;){if(a+=H(i,s,e,t,-1,1,20,r,u),a>1)return 1;F0(a-v)/a<=C0?f=!0:v=a,s+=1}return a}L.exports=S0
+});var B=o(function(Z0,A){
+var _0=require('@stdlib/assert-is-positive-integer/dist').isPrimitive,k=require('@stdlib/utils-constant-function/dist'),O=require('@stdlib/math-base-assert-is-nan/dist'),h0=require('@stdlib/math-base-special-abs/dist'),j0=require('@stdlib/math-base-special-pow/dist'),G0=require('@stdlib/constants-float64-pinf/dist'),U=x(),H0=p(),L0=1e-10;function Q0(i,e,r){var t;if(O(e)||O(i)||i<2||e<2)return k(NaN);if(r===void 0)r=1;else if(!_0(r))return k(NaN);return e===1?i<10?t=1+1/(2*i+3):i<=100?t=1.0844+(1.119-1.0844)/90*(i-10):t=1.119+1/i:e===2?t=.968:e<=100?t=1:e<=800?t=1/2:e<=5e3?t=1/4:t=1/8,v;function v(a){var f,u,s,n;if(O(a))return NaN;if(a<0)return 0;if(a===G0)return 1;if(e>25e3||U(a,0,i,r,-1,1,20,e,t)===0)return j0(H0(a,i),r);for(u=0,s=!1,n=0,f=0;!s;){if(u+=U(a,n,i,r,-1,1,20,e,t),u>1)return 1;h0(u-f)/u<=L0?s=!0:f=u,n+=1}return u}}A.exports=Q0
+});var k0=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),D=Q(),U0=B();k0(D,"factory",U0);module.exports=D;
 /** @license Apache-2.0 */
-
-'use strict';
-
-/**
-* Studentized range cumulative distribution function (CDF).
-*
-* @module @stdlib/stats-base-dists-studentized-range-cdf
-*
-* @example
-* var cdf = require( '@stdlib/stats-base-dists-studentized-range-cdf' );
-*
-* var y = cdf( 2.0, 0.1 );
-* // returns ~0.611
-*
-* y = cdf( 1.0, 2.0 );
-* // returns ~0.789
-*
-* y = cdf( -1.0, 4.0 );
-* // returns ~0.187
-*
-* var mycdf = cdf.factory( 3.0, 2.0 );
-* y = mycdf( 3.0 );
-* // returns ~0.712
-*
-* y = mycdf( 1.0 );
-* // returns ~0.216
-*/
-
-// MODULES //
-
-var setReadOnly = require( '@stdlib/utils-define-nonenumerable-read-only-property/dist' );
-var main = require( './main.js' );
-var factory = require( './factory.js' );
-
-
-// MAIN //
-
-setReadOnly( main, 'factory', factory );
-
-
-// EXPORTS //
-
-module.exports = main;
+//# sourceMappingURL=index.js.map
