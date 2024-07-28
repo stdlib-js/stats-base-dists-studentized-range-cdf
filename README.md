@@ -48,13 +48,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import cdf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-studentized-range-cdf@deno/mod.js';
+import cdf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-studentized-range-cdf@v0.2.2-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-studentized-range-cdf@deno/mod.js';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-studentized-range-cdf@v0.2.2-deno/mod.js';
 ```
 
 #### cdf( x, r, v\[, nranges=1] )
@@ -117,7 +117,7 @@ y = mycdf( 1.0 );
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import cdf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-studentized-range-cdf@deno/mod.js';
+import cdf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-studentized-range-cdf@v0.2.2-deno/mod.js';
 
 var v;
 var q;
