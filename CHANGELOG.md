@@ -2,6 +2,53 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2025-02-17)
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#4987](https://github.com/stdlib-js/stdlib/issues/4987)
+
+</section>
+
+<!-- /.issues -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`2f54879`](https://github.com/stdlib-js/stdlib/commit/2f54879e747af42e332e37d0a033a25f54ae05c2) - **bench:** refactor random number generation in `stats/base/dists/studentized-range` [(#5175)](https://github.com/stdlib-js/stdlib/pull/5175) _(by Harsh, Karan Anand, stdlib-bot)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Harsh
+-   Karan Anand
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.2">
 
 ## 0.2.2 (2024-07-28)
