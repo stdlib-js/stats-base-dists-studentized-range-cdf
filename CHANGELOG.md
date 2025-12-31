@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-17)
+## Unreleased (2025-12-31)
 
 <section class="issues">
 
@@ -24,7 +24,12 @@ This release closes the following issue:
 
 <details>
 
--   [`2f54879`](https://github.com/stdlib-js/stdlib/commit/2f54879e747af42e332e37d0a033a25f54ae05c2) - **bench:** refactor random number generation in `stats/base/dists/studentized-range` [(#5175)](https://github.com/stdlib-js/stdlib/pull/5175) _(by Harsh, Karan Anand, stdlib-bot)_
+-   [`4d332d8`](https://github.com/stdlib-js/stdlib/commit/4d332d8be34328ad684754205b482d90151d9bdf) - **docs:** replace manual `for` loop in examples [(#9455)](https://github.com/stdlib-js/stdlib/pull/9455) _(by Harsh Yadav)_
+-   [`fc438e0`](https://github.com/stdlib-js/stdlib/commit/fc438e0edbad0689d6923d6f3edb959b96597662) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`07f7c05`](https://github.com/stdlib-js/stdlib/commit/07f7c0522c73e6ad9505e1d45035ae439344200d) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`9c21fd2`](https://github.com/stdlib-js/stdlib/commit/9c21fd20ef8b8a6a88abb96d80ea6d8e4c5434eb) - **test:** use .strictEqual() instead of .equal() _(by Philipp Burckhardt)_
+-   [`b20b024`](https://github.com/stdlib-js/stdlib/commit/b20b0247ea520b8f715d41851cb7b1fbfdf2122d) - **style:** fix indentation in JSON files _(by Philipp Burckhardt)_
+-   [`2f54879`](https://github.com/stdlib-js/stdlib/commit/2f54879e747af42e332e37d0a033a25f54ae05c2) - **bench:** refactor random number generation in `stats/base/dists/studentized-range` [(#5175)](https://github.com/stdlib-js/stdlib/pull/5175) _(by Harsh Yadav, Karan Anand, stdlib-bot)_
 
 </details>
 
@@ -36,10 +41,11 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
--   Harsh
+-   Harsh Yadav
 -   Karan Anand
+-   Philipp Burckhardt
 
 </section>
 
