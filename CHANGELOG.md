@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-12)
+## Unreleased (2026-01-28)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`5ff8286`](https://github.com/stdlib-js/stdlib/commit/5ff82862ae371a0b87203969dad69861fd5ef180) - **bench:** update random value generation [(#9923)](https://github.com/stdlib-js/stdlib/pull/9923) _(by Harsh Yadav)_
 -   [`55a2f26`](https://github.com/stdlib-js/stdlib/commit/55a2f260629b5dca631ea8176ce8c3c1b0b78c8f) - **build:** add scaffold for ternary random packages _(by Athan Reines)_
 -   [`4d332d8`](https://github.com/stdlib-js/stdlib/commit/4d332d8be34328ad684754205b482d90151d9bdf) - **docs:** replace manual `for` loop in examples [(#9455)](https://github.com/stdlib-js/stdlib/pull/9455) _(by Harsh Yadav)_
 -   [`fc438e0`](https://github.com/stdlib-js/stdlib/commit/fc438e0edbad0689d6923d6f3edb959b96597662) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
