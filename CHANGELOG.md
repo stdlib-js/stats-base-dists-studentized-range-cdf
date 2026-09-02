@@ -4,13 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-31)
+## Unreleased (2026-09-02)
 
 <section class="features">
 
 ### Features
 
--   [`250d09e`](https://github.com/stdlib-js/stdlib/commit/250d09e1a4e7e1d8fbd28d9a10e90096a173c2b7) - add C implementation for `stats/base/dists/studentized-range/cdf`
+-   [`250d09e`](https://github.com/stdlib-js/stdlib/commit/250d09e1a4e7e1d8fbd28d9a10e90096a173c2b7) - add C implementation for `stats/base/dists/studentized-range/cdf` [(#10106)](https://github.com/stdlib-js/stdlib/pull/10106)
 
 </section>
 
@@ -34,7 +34,8 @@ This release closes the following issue:
 
 <details>
 
--   [`250d09e`](https://github.com/stdlib-js/stdlib/commit/250d09e1a4e7e1d8fbd28d9a10e90096a173c2b7) - **feat:** add C implementation for `stats/base/dists/studentized-range/cdf` _(by Nirmal Jyoti Biswas, Neeraj Pathak, Philipp Burckhardt)_
+-   [`fbf7687`](https://github.com/stdlib-js/stdlib/commit/fbf76874bdaa45e6df339442b3e6ad038196e34c) - **chore:** clean-up _(by Athan Reines)_
+-   [`250d09e`](https://github.com/stdlib-js/stdlib/commit/250d09e1a4e7e1d8fbd28d9a10e90096a173c2b7) - **feat:** add C implementation for `stats/base/dists/studentized-range/cdf` [(#10106)](https://github.com/stdlib-js/stdlib/pull/10106) _(by Nirmal Jyoti Biswas, Neeraj Pathak, Philipp Burckhardt)_
 -   [`f59b324`](https://github.com/stdlib-js/stdlib/commit/f59b324c3c652580e17c4c4baae8168faab8af8c) - **docs:** fix typos and copy-paste errors in `stats` TypeScript declarations [(#12482)](https://github.com/stdlib-js/stdlib/pull/12482) _(by Philipp Burckhardt, Athan Reines)_
 -   [`bd60a20`](https://github.com/stdlib-js/stdlib/commit/bd60a209ca4b0989663edbbc591bc7da80294827) - **build:** update R version to 4.2.0 in lint workflows [(#11262)](https://github.com/stdlib-js/stdlib/pull/11262) _(by Mara Averick)_
 
